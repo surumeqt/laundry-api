@@ -20,7 +20,7 @@ const PORT = process.env.PORT;
 const MONGO_URL = process.env.MONGO_URL;
 
 app.use(cors({
-  origin: 'http://localhost:4200',
+  origin: 'https://regal-selkie-94d772.netlify.app',
   credentials: true
 }));
 app.use(express.json());
