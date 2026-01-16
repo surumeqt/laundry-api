@@ -1,27 +1,36 @@
 {
-  "name": "server",
-  "version": "1.0.0",
+  "name": "laundry-api",
+  "version": "2.0.0",
+  "description": "Backend API for Laundry Management System with automated billing and order tracking.",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "laundry-pos",
+    "api"
+  ],
   "author": "Kenneth Esmena",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
+  "dependencies": {
     "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.1.2",
-    "nodemon": "^3.1.11"
+    "mongoose": "^9.1.2"
   },
-  "dependencies": {
-    "cookie-parser": "^1.4.7",
-    "express-async-handler": "^1.2.0"
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
